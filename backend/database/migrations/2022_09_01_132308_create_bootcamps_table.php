@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('bootcamps', function (Blueprint $table) {
             $table->id();
             $table->string('name', 100);
-            $table->string('webside', 150);
             $table->text('description');
+            $table->string('webside', 150);
             $table->string('phone', 30);
             $table->float('average_rating', 1, 1);
             $table->float('average_cost', 8, 2);
